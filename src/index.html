@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lover 2.0 Harry Potter</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main id="root">
-      <h1>Bienvenida</h1>
-    </main>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lover 2.0 Harry Potter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fontawesome-free/css/all.css">
+</head>
+
+<body>
+  <main id="root">
+    <div class="col-left">
+      <div class="logo">
+        <h1><img src="./img/Harry-Potter-Logo.png" alt="Harry-Potter-Logo"></h1>
+      </div>
+      <div class="box-edad">
+        <h3>Ordenar por edad</h3>
+        <button class="ascendente">
+          <i class="fas fa-angle-double-up"></i>
+          <p>Ascendente</p>
+        </button>
+        <button class="ascendente">
+          <i class="fas fa-angle-double-down"></i>
+          <p>Descendente</p>
+        </button>
+      </div>
+      <div class="box-filtro">
+        <h3>Filtrar por</h3>
+        <div class="group-select">
+          <span>Genero</span>
+          <select name="genero" id="genero">
+            <option value="0"></option>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="group-select">
+          <span>Rol</span>
+          <select name="genero" id="genero">
+            <option value="0"></option>
+            <option value="estudiante">Estudiante</option>
+            <option value="profesor">Profesor</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="group-select">
+          <span>Casa</span>
+          <select name="genero" id="genero">
+            <option value="0"></option>
+            <option value="gryffindor">Gryffindor</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="hufflepuff">Hufflepuff</option>
+          </select>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-right">
+      <h2>Personajes de la saga de Harry Potter</h2>
+    </div>
+
+  </main>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
