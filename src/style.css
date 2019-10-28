@@ -21,7 +21,7 @@ main{
 }
 .col-izq{
     background-color: #898C93;
-    height: 100vh;
+    height: 100%;
     width: 480px;
     display: flex;
     flex-direction: column;
