@@ -7,44 +7,48 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 main{
     display: flex;
     justify-content: stretch;
 }
-.col-right{
+.col-der{
     background-color: #F0F1F3;
-    height: 100vh;
+    height: 100%;
     flex-basis: 75%;
+    margin-left: 480px;
 }
-.col-left{
+.col-izq{
     background-color: #898C93;
     height: 100vh;
-    flex-basis: 25%;
+    width: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
+    position: fixed;
+    z-index: 50;
     
 }
-.col-left .logo{
+.col-izq .logo{
     width: 200px;
     margin-top: 50px;
 }
-.col-left .logo img{
+.col-izq .logo img{
     width: 100%;
 }
 
-.col-left .box-edad,
-.col-left .box-filtro{
+.col-izq .box-edad,
+.col-izq .box-filtro{
     width: 210px;
 }
-.col-left .box-edad h3,
-.col-left .box-filtro h3{
+.col-izq .box-edad h3,
+.col-izq .box-filtro h3{
     margin-bottom: 30px;
     font-size: 25px;
 }
-.col-left .box-edad button{
+.col-izq .box-edad button{
     display: flex;
     width: 100%;
     background-color: #898C93;
@@ -55,7 +59,7 @@ main{
     font-size: 20px;
 }
 
-.col-left .box-edad button i{
+.col-izq .box-edad button i{
     margin-right: 40px;
 }
 
@@ -65,17 +69,17 @@ main{
    
 }
 
-.col-left .box-filtro .group-select{
+.col-izq .box-filtro .group-select{
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
 }
-.col-left .box-filtro .group-select span{
+.col-izq .box-filtro .group-select span{
     margin-right: 25px;
 }
 
-.col-right h2{
+.col-der h2{
     color: #7F7F7F;
     margin: 50px 25px;
     font-size: 40px;
@@ -84,25 +88,39 @@ main{
 
 /*aquí empecé*/ 
 .fila-tarjetas{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 0 80px;
+    
+
 }
+
 .caja-tarjeta-informacion{
-    margin: 0 30px;
     background: white;
-    width: 33%;
     position: relative;
     display: flex;
     flex-direction: column; 
     align-items: center ;
+    border-radius: 20px;
 }
 
 .cuadro-logo{
     position: absolute;
-    right: 0;
+    right: 25px;
+    z-index: 3;
 }   
-
+.forma-casa{
+    position: absolute;
+    width: 50px; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .logo-casa{
     width: 50px;
+    z-index: 5;
 }
 .tarjeta-informacion{
     padding: 20px;
