@@ -82,6 +82,61 @@ main{
     font-weight: lighter;
 }
 
+/*aquí empecé*/ 
+.fila-tarjetas{
+    display: flex;
+}
+.caja-tarjeta-informacion{
+    margin: 0 30px;
+    background: white;
+    width: 33%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center ;
+}
 
+.cuadro-logo{
+    position: absolute;
+    right: 0;
+}   
 
+.logo-casa{
+    width: 50px;
+}
+.tarjeta-informacion{
+    padding: 20px;
+}
 
+.tarjeta-informacion-personaje{
+    text-align: center;
+}
+.tarjeta-informacion-foto{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+}
+.informacion-texto{
+    margin-top: 5px;
+}
+.informacion-texto p{
+    color: #7F7F7F;
+}
+
+.tarjeta-infomacion-datos{
+    margin: 15px 0;
+    display: flex;
+}   
+.tarjeta-infomacion-datos i{
+    font-size: 35px;
+    margin-right: 10px;
+    color: #7F7F7F;
+}
+.datos-texto{
+    color: #7F7F7F;
+}
+.datos-texto p:last-child{
+    font-weight: bold;
+}
+
+/*Aquí terminé*/
