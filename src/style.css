@@ -18,6 +18,7 @@ main{
     height: 100%;
     flex-basis: 75%;
     margin-left: 24.69%;
+    overflow-x: scroll;
 }
 .col-izq{
     background-color: #898C93;
@@ -91,7 +92,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(80px, auto);
     padding: 0 80px;
     
 
