@@ -188,5 +188,20 @@ main{
 @media only screen and (max-width:690px){
     .fila-tarjetas{
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
     }
+    .fila-tarjetas{
+        padding: 0 5px;
+    }
+    .col-izq .box-edad button i{
+        margin-right: 20px;
+    }
+    .col-izq .box-edad button{
+        font-size: 17px;
+    }
+    .col-izq .box-filtro .group-select span{
+        margin-right: 10px;
+    }
+    
+
 }
